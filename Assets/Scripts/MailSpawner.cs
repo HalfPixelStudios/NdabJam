@@ -2,17 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MailSpawner : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+[RequireComponent(typeof(ConveyerNode))]
+public class MailSpawner : MonoBehaviour {
+
+    ConveyerNode conveyer;
+
+    void Start() {
+        conveyer = GetComponent<ConveyerNode>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         
+        if (conveyer.currentObject != null) { return; }
+
+        //spawn new mail parcel thingy
+        GameObject[] parcels = Resources.LoadAll<GameObject>("Packages");
+        GameObject randomParcel = Instantiate(parcels[Random.Range(0,parcels.Length)],conveyer.transform.position,Quaternion.identity);
+        conveyer.currentObject = randomParcel;
     }
 }
