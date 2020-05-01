@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e3a359e32d413247abbf3dee02435ec, type: 3}
-  m_Name: ConveyerBend
+  m_Name: Spawner
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: 2609204458862623525, guid: d3bad2fdf0bf4d142a8cb0eff5db744d, type: 3}
-  - {fileID: 3294478508149930233, guid: d3bad2fdf0bf4d142a8cb0eff5db744d, type: 3}
-  m_MinSpeed: 10
-  m_MaxSpeed: 10
+  - {fileID: -327034336030432230, guid: 69c57e0712a04f449956b25ddd45db9e, type: 3}
+  - {fileID: -484690809684753054, guid: 69c57e0712a04f449956b25ddd45db9e, type: 3}
+  - {fileID: -4174447827689070462, guid: 69c57e0712a04f449956b25ddd45db9e, type: 3}
+  - {fileID: 5904380017519489157, guid: 69c57e0712a04f449956b25ddd45db9e, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
   m_AnimationStartTime: 0
   m_TileColliderType: 0
