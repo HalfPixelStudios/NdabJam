@@ -3,11 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
+    private PlayerSlot playerSlot;
 
     private Rigidbody2D rb;
     Animator anim;
     SpriteRenderer sr;
+    [SerializeField] private float offsetX;
+    [SerializeField] private float offsetY;
+    
 
     [SerializeField] float speed;
 
@@ -15,6 +20,7 @@ public class PlayerMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        playerSlot = GetComponent<PlayerSlot>();
 
     }
 
@@ -28,6 +34,13 @@ public class PlayerMovement : MonoBehaviour {
         if (inp.x != 0) {
             sr.flipX = inp.x < 0;
         }
+
+        if (inp != Vector2.zero)
+        {
+            playerSlot.transform.position = new Vector3(offsetX*(inp.x<0?-1:1),offsetY*(inp.y<0?-1:1),0);
+            
+        }
+        
 
 
     }
