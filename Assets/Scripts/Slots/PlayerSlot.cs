@@ -41,10 +41,14 @@ public class PlayerSlot : Slot {
                     SetItem(newItem);
 
 
-                } else if (closest.item == null && this.item != null) { //otherwise put item into slot
+                } else if (this.item != null) { //otherwise put item into slot
 
                     GameObject newItem = RemoveItem();
-                    closest.SetItem(newItem);
+                    if (closest.item == null) {
+                        closest.SetItem(newItem);
+                    } else { //attempt to craft item
+
+                    }
 
                 }
             }

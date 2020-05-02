@@ -8,7 +8,7 @@ public class ConveyerSlot : Slot {
     public float conveyerSpeed;
     public float passDist;
 
-    public ConveyerSlot nextNode;
+    public Slot nextNode;
 
 
     void Start() {
