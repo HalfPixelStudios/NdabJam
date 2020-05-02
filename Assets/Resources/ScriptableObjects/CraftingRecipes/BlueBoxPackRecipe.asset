@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24205c064cceee418cf84e96ed11642, type: 3}
+  m_Name: BlueBoxPackRecipe
+  m_EditorClassIdentifier: 
+  input1:
+  - {fileID: 11400000, guid: 750cb9ffb453b4e4daa9e14cf9852d27, type: 2}
+  input2:
+  - {fileID: 11400000, guid: ff9259f227b0086438d06000a33f468a, type: 2}
+  output: {fileID: 11400000, guid: 4c7e52d7d90178a4da567459922b277f, type: 2}
