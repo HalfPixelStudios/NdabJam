@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InfiniteSlot : Slot {
 
-    public GameObject infiniteItem;
+    public ItemInfo infiniteItem;
 
     void Start() {
         base.Start();
@@ -15,7 +15,7 @@ public class InfiniteSlot : Slot {
     void Update() {
         
         if (item == null) { //if the item gets taken, fill it back up
-            GameObject newItem = Instantiate(infiniteItem);
+            GameObject newItem = Item.CreateItem(infiniteItem);
             SetItem(newItem);
 
         }

@@ -24,7 +24,8 @@ public class Item : MonoBehaviour {
 
         //assign other unique properties and shit here
 
-        //sr.sprite = info.sprite
+        sr.sprite = info.sprite;
+        sr.sortingOrder = 3;
 
 
         return newItem;

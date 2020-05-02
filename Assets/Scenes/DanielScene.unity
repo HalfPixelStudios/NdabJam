@@ -2977,8 +2977,7 @@ MonoBehaviour:
   hideWhenHeld: 1
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
-  infiniteItem: {fileID: 6547719821110495132, guid: d64004d7b3235f5459c40d4970f89f65,
-    type: 3}
+  infiniteItem: {fileID: 11400000, guid: 307d83db1c5952d479e687e2da4fc533, type: 2}
 --- !u!1 &1400518052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3041,6 +3040,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8457922fa324fd4e9913f4a1290a20a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  packages:
+  - {fileID: 11400000, guid: 6e31ea6d27b36c64fa5948211c56fd81, type: 2}
+  - {fileID: 11400000, guid: 5a1ffd0e47e6ad542b0fb6c1cf70bbc2, type: 2}
+  - {fileID: 11400000, guid: ff9259f227b0086438d06000a33f468a, type: 2}
 --- !u!1 &1752305062
 GameObject:
   m_ObjectHideFlags: 0
@@ -3136,8 +3139,7 @@ MonoBehaviour:
   hideWhenHeld: 1
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
-  infiniteItem: {fileID: 7605029993654929549, guid: 1dbe3665aa1b49a46837c1c9fe82c5d5,
-    type: 3}
+  infiniteItem: {fileID: 11400000, guid: b4a556fb4c452474b8d56b1cebb96e33, type: 2}
 --- !u!1 &1880466210
 GameObject:
   m_ObjectHideFlags: 0
