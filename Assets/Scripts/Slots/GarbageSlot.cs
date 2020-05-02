@@ -14,8 +14,7 @@ public class GarbageSlot : Slot {
     void Update() {
         
         if (item != null) { //if theres an item, destory it
-            var delItem = RemoveItem();
-            Destroy(delItem);
+            DestroyItem();
         }
     }
 }

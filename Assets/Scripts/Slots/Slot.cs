@@ -32,6 +32,11 @@ public class Slot : MonoBehaviour {
         return removed;
     }
 
+    public void DestroyItem() {
+        GameObject destroy = RemoveItem();
+        Destroy(destroy);
+    }
+
     private void OnDrawGizmos() {
         Gizmos.color = Color.blue;
         Gizmos.DrawSphere(transform.position, 0.1f);

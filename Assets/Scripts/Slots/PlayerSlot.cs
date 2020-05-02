@@ -43,10 +43,24 @@ public class PlayerSlot : Slot {
 
                 } else if (this.item != null) { //otherwise put item into slot
 
-                    GameObject newItem = RemoveItem();
+                    
                     if (closest.item == null) {
+                        GameObject newItem = RemoveItem();
                         closest.SetItem(newItem);
-                    } else { //attempt to craft item
+
+                    } else { //attempt to craft item PROB MOVE THIS CODE TO TABLE SCRIPT OR SM
+
+                        ItemInfo item1 = closest.item.GetComponent<Item>().info;
+                        ItemInfo item2 = this.item.GetComponent<Item>().info;
+                        ItemInfo crafted = CraftingRecipes.Craft(item1,item2);
+
+                        if (crafted) { //create new item and place in slot
+                            DestroyItem();
+                            closest.DestroyItem();
+                            
+                            GameObject newItem = Item.CreateItem(crafted);
+                            closest.SetItem(newItem);
+                        }
 
                     }
 

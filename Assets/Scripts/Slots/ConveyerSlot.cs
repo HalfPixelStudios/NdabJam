@@ -25,7 +25,10 @@ public class ConveyerSlot : Slot {
         //pass along object
         var distToNext = Vector3.Distance(item.transform.position,nextNode.transform.position);
         if (distToNext < passDist) {
+
+            this.item.transform.parent = nextNode.transform;
             nextNode.item = this.item;
+            
             this.item = null;
         }
     }
