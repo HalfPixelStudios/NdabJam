@@ -19,6 +19,13 @@ public class DeliverySlot : Slot {
             ItemInfo info = item.GetComponent<Item>().info;
             DestroyItem();
             deposited.Add(info);
+
+            //play some sounds to tell user if the delivery was a success
+            if (acceptable.Contains(info)) {
+                SoundPlayer.quickStart("Sounds/depositSuccess");
+            } else {
+                SoundPlayer.quickStart("Sounds/depositFail");
+            }
         }
     }
 

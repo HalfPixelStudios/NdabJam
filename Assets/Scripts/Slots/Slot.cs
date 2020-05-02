@@ -26,6 +26,8 @@ public class Slot : MonoBehaviour {
 
             GameObject newItem = playerSlot.RemoveItem();
             SetItem(newItem);
+
+            SoundPlayer.quickStart("Sounds/pickup");
             return;
 
         }
@@ -33,6 +35,8 @@ public class Slot : MonoBehaviour {
 
             GameObject newItem = RemoveItem();
             playerSlot.SetItem(newItem);
+
+            SoundPlayer.quickStart("Sounds/drop");
             return;
 
         }
@@ -47,6 +51,10 @@ public class Slot : MonoBehaviour {
                 DestroyItem();
 
                 SetItem(Item.CreateItem(crafted));
+
+                SoundPlayer.quickStart("Sounds/craftSuccess");
+            } else {
+                SoundPlayer.quickStart("Sounds/craftError");
             }
 
         }
