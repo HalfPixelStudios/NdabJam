@@ -7,12 +7,10 @@ public class ReversibleConveryerSlot : ConveyerSlot {
     public Slot prevNode;
 
     bool isReverse;
-    Animator anim;
+    public Animator anim;
 
     void Start() {
         base.Start();
-
-        anim = GetComponent<Animator>();
 
     }
 

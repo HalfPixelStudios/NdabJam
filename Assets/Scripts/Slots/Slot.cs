@@ -20,7 +20,7 @@ public class Slot : MonoBehaviour {
 
 
 
-    public void Interact(Slot playerSlot) { //called by player when interacting
+    public virtual void Interact(Slot playerSlot) { //called by player when interacting
 
         if (playerSlot.item != null && item == null && allowPlace) { //player place item into slot
 
