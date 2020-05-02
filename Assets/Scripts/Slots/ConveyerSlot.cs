@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConveyerNode : Slot {
+public class ConveyerSlot : Slot {
 
 
     public float conveyerSpeed;
     public float passDist;
 
-    public ConveyerNode nextNode;
+    public ConveyerSlot nextNode;
 
 
     void Start() {

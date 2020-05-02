@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(ConveyerNode))]
+[RequireComponent(typeof(ConveyerSlot))]
 public class MailSpawner : MonoBehaviour {
 
-    ConveyerNode conveyer;
+    ConveyerSlot conveyer;
 
     void Start() {
-        conveyer = GetComponent<ConveyerNode>();
+        conveyer = GetComponent<ConveyerSlot>();
     }
 
     void Update() {
