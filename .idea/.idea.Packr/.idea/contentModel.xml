@@ -7,8 +7,9 @@
         <e p="Scripts" t="Include">
           <e p="AnimatedTile.cs" t="Include" />
           <e p="ConveyerNode.cs" t="Include" />
+          <e p="DisplayText.cs" t="Include" />
+          <e p="InfiniteSlot.cs" t="Include" />
           <e p="MailSpawner.cs" t="Include" />
-          <e p="Pickup.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="PlayerSlot.cs" t="Include" />
           <e p="Slot.cs" t="Include" />
