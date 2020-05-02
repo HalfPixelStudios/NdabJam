@@ -15,6 +15,8 @@ public class GarbageSlot : Slot {
         
         if (item != null) { //if theres an item, destory it
             DestroyItem();
+
+            SoundPlayer.quickStart("Sounds/incinerator");
         }
     }
 }
