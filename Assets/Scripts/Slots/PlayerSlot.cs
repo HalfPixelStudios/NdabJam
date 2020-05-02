@@ -10,13 +10,7 @@ public class PlayerSlot : Slot {
 
 
     private void Start() {
-
-        /*
-        //override superclass
-        CircleCollider2D col = gameObject.AddComponent<CircleCollider2D>();
-        col.isTrigger = true;
-        col.radius = pickup_radius;
-        */
+        base.Start();
     }
 
     private void Update() {
@@ -41,40 +35,16 @@ public class PlayerSlot : Slot {
             }
 
             if (closest) {
-                if (this.item == null && closest.item != null) { //take item from slot
-
-                    GameObject newItem = closest.RemoveItem();
-                    SetItem(newItem);
-
-
-                } else if (this.item != null) { //otherwise put item into slot
-
-                    
-                    if (closest.item == null) {
-                        GameObject newItem = RemoveItem();
-                        closest.SetItem(newItem);
-
-                    } else { //attempt to craft item PROB MOVE THIS CODE TO TABLE SCRIPT OR SM
-
-                        ItemInfo item1 = closest.item.GetComponent<Item>().info;
-                        ItemInfo item2 = this.item.GetComponent<Item>().info;
-                        ItemInfo crafted = CraftingRecipes.Craft(item1,item2);
-
-                        if (crafted) { //create new item and place in slot
-                            DestroyItem();
-                            closest.DestroyItem();
-                            
-                            GameObject newItem = Item.CreateItem(crafted);
-                            closest.SetItem(newItem);
-                        }
-
-                    }
-
-                }
+                closest.Interact(this);
             }
 
         }
 
+    }
+
+    private void OnDrawGizmos() {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, pickup_radius);
     }
 
 }
