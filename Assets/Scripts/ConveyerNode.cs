@@ -12,6 +12,7 @@ public class ConveyerNode : Slot {
 
 
     void Start() {
+        base.Start();
     }
 
     void Update() {
@@ -27,10 +28,5 @@ public class ConveyerNode : Slot {
             nextNode.item = this.item;
             this.item = null;
         }
-    }
-
-    private void OnDrawGizmos() {
-        Gizmos.color = Color.blue;
-        Gizmos.DrawSphere(transform.position,0.1f);
     }
 }

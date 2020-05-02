@@ -7,7 +7,7 @@ public class InfiniteSlot : Slot {
     public GameObject infiniteItem;
 
     void Start() {
-        
+        base.Start();
     }
 
     void Update() {
