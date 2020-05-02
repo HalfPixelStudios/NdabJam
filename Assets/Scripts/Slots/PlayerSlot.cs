@@ -2,32 +2,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GlobalContainer;
 
 public class PlayerSlot : Slot {
 
     public float pickup_radius;
 
-    List<Slot> inRange = new List<Slot>();
-
-
 
     private void Start() {
+
+        /*
         //override superclass
         CircleCollider2D col = gameObject.AddComponent<CircleCollider2D>();
         col.isTrigger = true;
         col.radius = pickup_radius;
-
+        */
     }
 
     private void Update() {
 
+        
+
+
         if (Input.GetKeyDown(KeyCode.E)) {
+
+            //look for closest node within reach distance
+
             Slot closest = null;
             float closestDist = float.PositiveInfinity;
-            foreach (var slot in inRange) {
+            foreach (var slot in Global.nodes) {
 
                 var dist = Vector3.Distance(slot.transform.position, transform.position);
-                if (dist < closestDist) {
+                if (dist < closestDist && dist < pickup_radius) {
                     closestDist = dist;
                     closest = slot;
                 }
@@ -68,16 +74,7 @@ public class PlayerSlot : Slot {
             }
 
         }
-        inRange.Clear();
 
     }
 
-
-    private void OnTriggerStay2D(Collider2D other) {
-
-        Slot slot = other.GetComponent<Slot>();
-        if (slot != null) { //if the other thing actually has the slot compenet
-            inRange.Add(slot);
-        }
-    }
 }

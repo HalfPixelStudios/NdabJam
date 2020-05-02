@@ -10,8 +10,7 @@ public class Slot : MonoBehaviour {
     public Vector2 holdOffset;
 
     protected void Start() {
-        CircleCollider2D col = gameObject.AddComponent<CircleCollider2D>();
-        col.radius = 0.05f;
+
     }
 
 
