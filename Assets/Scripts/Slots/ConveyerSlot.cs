@@ -38,4 +38,5 @@ public class ConveyerSlot : Slot {
         this.item = item;
         item.transform.parent = transform;
     }
+
 }

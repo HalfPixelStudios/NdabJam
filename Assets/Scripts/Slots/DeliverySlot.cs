@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DeliverySlot : Slot {
 
+    public List<ItemInfo> acceptable;
+
     public List<ItemInfo> deposited;
 
     void Start() {
@@ -18,6 +20,20 @@ public class DeliverySlot : Slot {
             DestroyItem();
             deposited.Add(info);
         }
+    }
+
+    public int CalculateScore() {
+        int score = 0;
+
+        foreach (var info in deposited) {
+
+            if (acceptable.Contains(info)) { //if correct
+                score += info.correctPoints;
+            } else {
+                score += info.incorrectPoints;
+            }
+        }
+        return score;
     }
 
     
