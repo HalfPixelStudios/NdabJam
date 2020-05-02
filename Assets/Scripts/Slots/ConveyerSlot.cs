@@ -26,10 +26,16 @@ public class ConveyerSlot : Slot {
         var distToNext = Vector3.Distance(item.transform.position,nextNode.transform.position);
         if (distToNext < passDist) {
 
-            this.item.transform.parent = nextNode.transform;
-            nextNode.item = this.item;
+            GameObject newItem = RemoveItem();
+            nextNode.SetItem(newItem);
             
-            this.item = null;
         }
+    }
+
+    new void SetItem(GameObject item) {
+        item.SetActive(!hideWhenHeld);
+
+        this.item = item;
+        item.transform.parent = transform;
     }
 }

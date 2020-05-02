@@ -1,43 +1,19 @@
 fileFormatVersion: 2
-guid: 69c57e0712a04f449956b25ddd45db9e
+guid: 7e5068bd2007cda42aae9aad2025c483
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2956541825629854486
-    second: spawner_0
+      213: -8532650163380614289
+    second: parcel=spawner_0
   - first:
-      213: 7640131500133680952
-    second: spawner_1
+      213: 9136737498738334254
+    second: parcel=spawner_1
   - first:
-      213: 1649274381786300612
-    second: spawner_2
+      213: -5327401084305989959
+    second: parcel=spawner_2
   - first:
-      213: -327034336030432230
-    second: spawner_3
-  - first:
-      213: -484690809684753054
-    second: spawner_4
-  - first:
-      213: -4174447827689070462
-    second: spawner_5
-  - first:
-      213: -5098843188544616737
-    second: spawner_6
-  - first:
-      213: 5904380017519489157
-    second: spawner_7
-  - first:
-      213: 1400896423147509312
-    second: spawner_0
-  - first:
-      213: 5571855102746525058
-    second: spawner_1
-  - first:
-      213: -8082696375539004267
-    second: spawner_2
-  - first:
-      213: -3698784772209122098
-    second: spawner_3
+      213: 2491498609221248874
+    second: parcel=spawner_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -159,76 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spawner_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 24
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04692d4efdbf07310800000000000000
-      internalID: 1400896423147509312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spawner_1
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 24
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28d772be1b4335d40800000000000000
-      internalID: 5571855102746525058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spawner_2
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 24
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59c09ac687e74df80800000000000000
-      internalID: -8082696375539004267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spawner_3
+      name: parcel=spawner_0
       rect:
         serializedVersion: 2
         x: 0
         y: 16
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec4e9dfb8d64bacc0800000000000000
-      internalID: -3698784772209122098
+      spriteID: f6b050362efe59980800000000000000
+      internalID: -8532650163380614289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spawner_4
+      name: parcel=spawner_1
       rect:
         serializedVersion: 2
         x: 8
         y: 16
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26508dec6480649f0800000000000000
-      internalID: -484690809684753054
+      spriteID: e2a1a4ab8563cce70800000000000000
+      internalID: 9136737498738334254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spawner_5
+      name: parcel=spawner_2
       rect:
         serializedVersion: 2
         x: 16
         y: 16
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,41 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 280213161d16116c0800000000000000
-      internalID: -4174447827689070462
+      spriteID: 9be19e980f44116b0800000000000000
+      internalID: -5327401084305989959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spawner_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 8
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd6c06582254d39b0800000000000000
-      internalID: -5098843188544616737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spawner_7
+      name: parcel=spawner_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,8 +212,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 580f92bd75290f150800000000000000
-      internalID: 5904380017519489157
+      spriteID: a672309d8c4939220800000000000000
+      internalID: 2491498609221248874
       vertices: []
       indices: 
       edges: []
@@ -329,7 +221,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ee11891ad4bf3c84fb645ad65da8b7f1
+    spriteID: 78147bc9f47f78441b7ac246fbbbcfa3
     internalID: 0
     vertices: []
     indices: 

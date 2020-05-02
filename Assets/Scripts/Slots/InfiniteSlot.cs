@@ -10,6 +10,8 @@ public class InfiniteSlot : Slot {
         base.Start();
 
         hideWhenHeld = true;
+        allowPlace = false;
+        allowCraft = false;
     }
 
     void Update() {
