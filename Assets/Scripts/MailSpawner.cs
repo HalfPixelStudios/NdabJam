@@ -2,22 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(ConveyerNode))]
+[RequireComponent(typeof(ConveyerSlot))]
 public class MailSpawner : MonoBehaviour {
 
-    ConveyerNode conveyer;
+    public List<ItemInfo> packages;
+    ConveyerSlot conveyer;
 
     void Start() {
-        conveyer = GetComponent<ConveyerNode>();
+        conveyer = GetComponent<ConveyerSlot>();
     }
 
     void Update() {
         
-        if (conveyer.item != null) { return; }
+        if (conveyer.item != null || packages.Count == 0) { return; }
 
         //spawn new mail parcel thingy
-        GameObject[] parcels = Resources.LoadAll<GameObject>("Packages");
-        GameObject randomParcel = Instantiate(parcels[Random.Range(0,parcels.Length)],conveyer.transform.position,Quaternion.identity);
-        conveyer.item = randomParcel;
+        ItemInfo randomParcel = packages[Random.Range(0,packages.Count)];
+        GameObject newItem = Item.CreateItem(randomParcel);
+        conveyer.SetItem(newItem);
+
+        
     }
 }
