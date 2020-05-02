@@ -28,10 +28,30 @@ public class PlayerMovement : MonoBehaviour {
         rb.velocity = new Vector3(inp.x, inp.y, 0f) * speed;
 
         //flip player based on direction of movement
+        int rot;
         if (inp.x != 0) {
             sr.flipX = inp.x < 0;
+            if (sr.flipX)
+            {
+                rot = 5;
+            }
+            else
+            {
+                rot = -5;
+            }
+           
         }
-
+        else
+        {
+            rot = 0;
+        }
+        transform.rotation=Quaternion.Euler(0,0,Mathf.LerpAngle(transform.eulerAngles.z,rot,0.7f));
+        
+        
+        if (inp != Vector2.zero)
+        {
+            //playerSlot.transform.position = new Vector3(offsetX*(inp.x<0?-1:1),offsetY*(inp.y<0?-1:1),0)
+            }
 
     }
 }
