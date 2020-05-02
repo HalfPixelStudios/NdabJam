@@ -13,11 +13,11 @@ public class MailSpawner : MonoBehaviour {
 
     void Update() {
         
-        if (conveyer.currentObject != null) { return; }
+        if (conveyer.item != null) { return; }
 
         //spawn new mail parcel thingy
         GameObject[] parcels = Resources.LoadAll<GameObject>("Packages");
         GameObject randomParcel = Instantiate(parcels[Random.Range(0,parcels.Length)],conveyer.transform.position,Quaternion.identity);
-        conveyer.currentObject = randomParcel;
+        conveyer.item = randomParcel;
     }
 }

@@ -164,9 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1123ce8d3ecf1df499fab501545593ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 0}
   conveyerSpeed: 3
   passDist: 0.1
-  currentObject: {fileID: 0}
   nextNode: {fileID: 313198333}
 --- !u!1 &191719383
 GameObject:
@@ -258,9 +258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1123ce8d3ecf1df499fab501545593ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 0}
   conveyerSpeed: 3
   passDist: 0.1
-  currentObject: {fileID: 0}
   nextNode: {fileID: 615272881}
 --- !u!1 &520053034
 GameObject:
@@ -1904,9 +1904,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1123ce8d3ecf1df499fab501545593ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 0}
   conveyerSpeed: 3
   passDist: 0.1
-  currentObject: {fileID: 0}
   nextNode: {fileID: 0}
 --- !u!1 &746997955
 GameObject:
@@ -2126,9 +2126,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1123ce8d3ecf1df499fab501545593ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 0}
   conveyerSpeed: 3
   passDist: 0.1
-  currentObject: {fileID: 0}
   nextNode: {fileID: 2138881248}
 --- !u!1 &921005667
 GameObject:
@@ -2265,9 +2265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1123ce8d3ecf1df499fab501545593ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 0}
   conveyerSpeed: 3
   passDist: 0.1
-  currentObject: {fileID: 0}
   nextNode: {fileID: 2121662156}
 --- !u!1 &1322031765
 GameObject:
@@ -2320,6 +2320,7 @@ GameObject:
   - component: {fileID: 1380561652}
   - component: {fileID: 1380561655}
   - component: {fileID: 1380561656}
+  - component: {fileID: 1380561657}
   m_Layer: 0
   m_Name: cappy_0
   m_TagString: Untagged
@@ -2423,6 +2424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7545a9308eede4d9087ce3c51d5aacee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offsetX: 0
+  offsetY: 0
   speed: 5
 --- !u!61 &1380561656
 BoxCollider2D:
@@ -2450,6 +2453,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &1380561657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380561651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f522147a4754a209bfcbde0a018b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}
+  pickup_radius: 2
 --- !u!1 &1400518052
 GameObject:
   m_ObjectHideFlags: 0
@@ -2494,9 +2511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1123ce8d3ecf1df499fab501545593ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 0}
   conveyerSpeed: 3
   passDist: 0.1
-  currentObject: {fileID: 0}
   nextNode: {fileID: 1042569586}
 --- !u!114 &1400518055
 MonoBehaviour:
@@ -2712,7 +2729,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 3501707186575875851, guid: 0dbf239f585f48c46b7496348554251a, type: 3}
       - {fileID: 2525719178658286707, guid: 0dbf239f585f48c46b7496348554251a, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 3, y: -3, z: 0}
@@ -2760,7 +2777,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: -3767420847571584271, guid: 6c43d60309bc0a149b919ae327a52015, type: 3}
       - {fileID: 2313193661530041215, guid: 6c43d60309bc0a149b919ae327a52015, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -1, y: 1, z: 0}
@@ -2954,6 +2971,15 @@ Tilemap:
   m_GameObject: {fileID: 1935154079}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: -5, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: -3, y: -3, z: 0}
     second:
       serializedVersion: 2
@@ -2972,12 +2998,25 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: -5, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: be15e207658e00245b06d9266dfbca5e, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 453dc6dffd7429f47adb39f665c1e749, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 784ca1b4767c7854fbdfd9b9620f3f26, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: fd0420c412f0cd64f80e8823cd3bc415, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 8033975403568566451, guid: 90b935e8616689f46a4dbe62566ad548,
@@ -2985,8 +3024,12 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 4614441487362770172, guid: 90b935e8616689f46a4dbe62566ad548,
       type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 82d6e79d069455c4bb22413d73e3bce5, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 88470548d2901494db7ef4af2686a320, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 2
+  - m_RefCount: 4
     m_Data:
       e00: 1
       e01: 0
@@ -3005,13 +3048,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2
+  - m_RefCount: 4
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -3, y: -3, z: 0}
-  m_Size: {x: 3, y: 3, z: 1}
+  m_Origin: {x: -5, y: -4, z: 0}
+  m_Size: {x: 5, y: 4, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -3074,9 +3117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1123ce8d3ecf1df499fab501545593ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 0}
   conveyerSpeed: 3
   passDist: 0.1
-  currentObject: {fileID: 0}
   nextNode: {fileID: 902472590}
 --- !u!1 &2138881246
 GameObject:
@@ -3121,7 +3164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1123ce8d3ecf1df499fab501545593ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 0}
   conveyerSpeed: 3
   passDist: 0.1
-  currentObject: {fileID: 0}
   nextNode: {fileID: 165303686}

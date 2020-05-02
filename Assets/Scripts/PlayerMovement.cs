@@ -10,11 +10,11 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     Animator anim;
     SpriteRenderer sr;
-    [SerializeField] private float offsetX;
-    [SerializeField] private float offsetY;
+    public float offsetX;
+    public float offsetY;
     
 
-    [SerializeField] float speed;
+    public float speed;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (inp != Vector2.zero)
         {
-            playerSlot.transform.position = new Vector3(offsetX*(inp.x<0?-1:1),offsetY*(inp.y<0?-1:1),0);
+            //playerSlot.transform.position = new Vector3(offsetX*(inp.x<0?-1:1),offsetY*(inp.y<0?-1:1),0);
             
         }
         

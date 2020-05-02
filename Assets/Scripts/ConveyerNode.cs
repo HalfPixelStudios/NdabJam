@@ -2,33 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConveyerNode : MonoBehaviour {
+public class ConveyerNode : Slot {
 
 
     public float conveyerSpeed;
     public float passDist;
 
-
-    public GameObject currentObject;
-
     public ConveyerNode nextNode;
 
+
     void Start() {
-        
     }
 
     void Update() {
         
-        if (currentObject == null || nextNode == null || nextNode.currentObject != null) { return; }
+        if (item == null || nextNode == null || nextNode.item != null) { return; }
 
-        currentObject.transform.position = Vector3.MoveTowards(currentObject.transform.position,nextNode.transform.position,conveyerSpeed*Time.deltaTime);
+        item.transform.position = Vector3.MoveTowards(item.transform.position,nextNode.transform.position,conveyerSpeed*Time.deltaTime);
 
 
         //pass along object
-        var distToNext = Vector3.Distance(currentObject.transform.position,nextNode.transform.position);
+        var distToNext = Vector3.Distance(item.transform.position,nextNode.transform.position);
         if (distToNext < passDist) {
-            nextNode.currentObject = this.currentObject;
-            this.currentObject = null;
+            nextNode.item = this.item;
+            this.item = null;
         }
     }
 
