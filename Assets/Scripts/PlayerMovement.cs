@@ -12,12 +12,16 @@ public class PlayerMovement : MonoBehaviour {
     
 
     public float speed;
+    public float footstepDistance = 1f;
+    float distSinceStep = 0;
+    Vector3 prevPosition;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
 
+        prevPosition = transform.position;
     }
 
     void Update() {
@@ -39,6 +43,14 @@ public class PlayerMovement : MonoBehaviour {
         } else { rot = 0; }
 
         transform.rotation=Quaternion.Euler(0,0,Mathf.LerpAngle(transform.eulerAngles.z,rot,0.7f));
-        
+
+        //footstep sound stuff
+        distSinceStep += Vector3.Distance(transform.position,prevPosition);
+        if (distSinceStep > footstepDistance) {
+            distSinceStep = 0;
+            SoundPlayer.quickRandomSound("Sounds/footsteps");
+        }
+
+        prevPosition = transform.position;
     }
 }

@@ -12,6 +12,8 @@ public class LevelTimer : MonoBehaviour {
     float timeleft;
     TextMeshProUGUI text;
 
+    float flashTime = 0;
+
     void Start() {
         text = GetComponent<TextMeshProUGUI>();
 
@@ -24,11 +26,29 @@ public class LevelTimer : MonoBehaviour {
         display();
         if (timeleft < 0) {
             //end level
+            Time.timeScale = 0f;
+
+            //calculate total score
+            int posScore = 0;
+            int negScore = 0;
+            DeliverySlot[] bins = FindObjectsOfType<DeliverySlot>();
+
+            foreach(var bin in bins) {
+                posScore += bin.posScore;
+                negScore += bin.negScore;
+
+            }
+
+            Debug.Log($"{posScore},{negScore}");
+
 
         }
     }
 
     void display() {
+
+        if (timeleft < 0) { return; }
+
         int minutes = (int)Mathf.Floor(timeleft/60);
         int seconds = (int)Mathf.Floor(timeleft%60);
 
@@ -38,5 +58,12 @@ public class LevelTimer : MonoBehaviour {
         output += (seconds < 10 ? "0" : "") + seconds.ToString();
 
         text.text = output;
+
+        //if there is little time left, make text flash red
+        if (minutes == 0 && seconds < 10) {
+            text.color = new Color(1, 0, 0, 1) + new Color(0, 1, 1, 0) * 0.5f * (Mathf.Cos(flashTime) + 0.5f);
+            flashTime += 5*Time.deltaTime;
+            
+        }
     }
 }

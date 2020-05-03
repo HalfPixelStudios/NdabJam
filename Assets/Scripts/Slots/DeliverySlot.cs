@@ -8,6 +8,10 @@ public class DeliverySlot : Slot {
 
     public List<ItemInfo> deposited;
 
+    public int posScore = 0;
+    public int negScore = 0;
+    
+
     void Start() {
         base.Start();
 
@@ -22,13 +26,21 @@ public class DeliverySlot : Slot {
 
             //play some sounds to tell user if the delivery was a success
             if (acceptable.Contains(info)) {
+                posScore += info.correctPoints;
                 SoundPlayer.quickStart("Sounds/depositSuccess");
+
+                Instantiate(Resources.Load("Particles/deliverySuccessParticle"), transform.position, Quaternion.identity);
+                
             } else {
+                negScore += info.incorrectPoints;
                 SoundPlayer.quickStart("Sounds/depositFail");
+
+                Instantiate(Resources.Load("Particles/deliveryFailParticle"), transform.position, Quaternion.identity);
             }
         }
     }
 
+    /*
     public int CalculateScore() {
         int score = 0;
 
@@ -42,6 +54,7 @@ public class DeliverySlot : Slot {
         }
         return score;
     }
+    */
 
     
 }

@@ -17,6 +17,7 @@ public class GarbageSlot : Slot {
             DestroyItem();
 
             SoundPlayer.quickStart("Sounds/incinerator");
+            Instantiate(Resources.Load("Particles/FireParticle"),transform.position,Quaternion.identity);
         }
     }
 }

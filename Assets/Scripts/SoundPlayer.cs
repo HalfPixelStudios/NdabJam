@@ -33,19 +33,19 @@ public class SoundPlayer : MonoBehaviour {
     }
 
     public static void quickStart(string audiopath, float volume) { //shen we dont wanna do anything special with the audio object
-        SoundPlayer sp = Instantiate(Resources.Load("SoundPlayer") as GameObject).GetComponent<SoundPlayer>();
-        AudioClip clip = Instantiate(Resources.Load<AudioClip>(audiopath));
-        sp.playSound(clip, volume);
+
     }
     public static void quickStart(string audiopath) {
-        SoundPlayer.quickStart(audiopath, defaultVolume);
+        SoundPlayer sp = Instantiate(Resources.Load("SoundPlayer") as GameObject).GetComponent<SoundPlayer>();
+        AudioClip clip = Instantiate(Resources.Load<AudioClip>(audiopath));
+        sp.playSound(clip, defaultVolume);
     }
 
-    public static void quickStart(AudioClip clip, float volume) { //shen we dont wanna do anything special with the audio object
+    public static void quickRandomSound(string audiodir) {
         SoundPlayer sp = Instantiate(Resources.Load("SoundPlayer") as GameObject).GetComponent<SoundPlayer>();
-        sp.playSound(clip, volume);
-    }
-    public static void quickStart(AudioClip clip) {
-        SoundPlayer.quickStart(clip, defaultVolume);
+        AudioClip[] clips = Resources.LoadAll<AudioClip>(audiodir);
+
+        AudioClip clip = clips[Random.Range(0, clips.Length)];
+        sp.playSound(clip, defaultVolume);
     }
 }
