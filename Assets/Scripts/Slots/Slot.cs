@@ -8,6 +8,7 @@ public class Slot : MonoBehaviour {
     public bool hideWhenHeld = false;
     public GameObject item;
     public Vector2 holdOffset;
+    public bool muteEffects = false;
 
     public bool allowTake = true;
     public bool allowPlace = true;

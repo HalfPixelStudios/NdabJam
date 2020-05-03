@@ -27,7 +27,10 @@ public class DeliverySlot : Slot {
             //play some sounds to tell user if the delivery was a success
             if (acceptable.Contains(info)) {
                 posScore += info.correctPoints;
-                SoundPlayer.quickStart("Sounds/depositSuccess");
+
+                if (!muteEffects) { SoundPlayer.quickStart("Sounds/depositSuccess"); }
+
+                
 
                 Instantiate(Resources.Load("Particles/deliverySuccessParticle"), transform.position, Quaternion.identity);
                 
