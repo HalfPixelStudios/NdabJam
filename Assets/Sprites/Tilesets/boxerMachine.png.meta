@@ -1,16 +1,61 @@
 fileFormatVersion: 2
-guid: 5abe25e0bdc6a3e4180a5a72972291a0
+guid: d0d2f95f924ceef4e8ce0aad6dea24e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4370006223003259277
-    second: incinerator_0
+      213: -3008947274736212663
+    second: boxerMachine_0
   - first:
-      213: -2492572590653678570
-    second: incinerator_1
+      213: -50391948460464649
+    second: boxerMachine_1
   - first:
-      213: 2413935817015562338
-    second: incinerator_2
+      213: 8485448150258515668
+    second: boxerMachine_2
+  - first:
+      213: 2569767286518188346
+    second: boxerMachine_3
+  - first:
+      213: 7843617541079312929
+    second: boxerMachine_4
+  - first:
+      213: 4428365445351810464
+    second: boxerMachine_5
+  - first:
+      213: -8460417981504737784
+    second: boxerMachine_6
+  - first:
+      213: -3478962832472975429
+    second: boxerMachine_7
+  - first:
+      213: 6708618092877050924
+    second: boxerMachine_8
+  - first:
+      213: -902403825387666329
+    second: boxerMachine_9
+  - first:
+      213: -3263309078709365103
+    second: boxerMachine_10
+  - first:
+      213: -2083193064797423312
+    second: boxerMachine_11
+  - first:
+      213: -2252180022672533976
+    second: boxerMachine_0
+  - first:
+      213: 5103440796289920070
+    second: boxerMachine_1
+  - first:
+      213: -4665474922446782333
+    second: boxerMachine_2
+  - first:
+      213: -4753664273153562357
+    second: boxerMachine_3
+  - first:
+      213: 3418994528943336651
+    second: boxerMachine_4
+  - first:
+      213: -5702669332712907048
+    second: boxerMachine_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -132,13 +177,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: incinerator_0
+      name: boxerMachine_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
+        y: 16
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37ee4a35e7e9a53c0800000000000000
-      internalID: -4370006223003259277
+      spriteID: 8265f52b336aeb0e0800000000000000
+      internalID: -2252180022672533976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: incinerator_1
+      name: boxerMachine_1
       rect:
         serializedVersion: 2
         x: 8
-        y: 8
+        y: 16
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +212,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61c563d5f6a986dd0800000000000000
-      internalID: -2492572590653678570
+      spriteID: 64ce8137d5013d640800000000000000
+      internalID: 5103440796289920070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: incinerator_2
+      name: boxerMachine_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380011bd647e04fb0800000000000000
+      internalID: -4665474922446782333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxerMachine_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,8 +254,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2601ec306d5008120800000000000000
-      internalID: 2413935817015562338
+      spriteID: b0967319787970eb0800000000000000
+      internalID: -4753664273153562357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxerMachine_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcceba2d865b27f20800000000000000
+      internalID: 3418994528943336651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxerMachine_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de1228b47c0cd0b0800000000000000
+      internalID: -5702669332712907048
       vertices: []
       indices: 
       edges: []
@@ -197,7 +305,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6532247f350fe9c4aabf7be3fbd3e0aa
+    spriteID: 5cd7f9da474488941b4a8011a4fa11d9
     internalID: 0
     vertices: []
     indices: 
