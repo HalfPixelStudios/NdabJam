@@ -6,12 +6,13 @@ public class ReversibleConveryerSlot : ConveyerSlot {
 
     public Slot prevNode;
 
-    bool isReverse;
+    public bool isReverse;
     public Animator anim;
 
     void Start() {
         base.Start();
 
+        updateConveyer();
     }
 
     public static void ReverseDirection(GameObject conveyerRoot) {
@@ -19,16 +20,21 @@ public class ReversibleConveryerSlot : ConveyerSlot {
         ReversibleConveryerSlot[] slots = conveyerRoot.GetComponentsInChildren<ReversibleConveryerSlot>();
 
         foreach (var slot in slots) {
-
-            //swap directions
-            Slot temp = slot.nextNode;
-            slot.nextNode = slot.prevNode;
-            slot.prevNode = temp;
-
-            //change sprite
             slot.isReverse = !slot.isReverse;
-            slot.anim.SetBool("isReverse", slot.isReverse);
+            slot.updateConveyer();
+
         }
 
+    }
+
+    void updateConveyer() {
+        //swap directions
+        Slot temp = nextNode;
+        nextNode = prevNode;
+        prevNode = temp;
+
+        //change sprite
+
+        anim.SetBool("isReverse", isReverse);
     }
 }
