@@ -26,6 +26,10 @@ public class PauseMenu : MonoBehaviour {
             //update ui
             unpausedUI.SetActive(!isPaused);
             pausedUI.SetActive(isPaused);
+
+            //pitch down music
+            AudioSource music = GameObject.Find("Music").GetComponent<AudioSource>();
+            music.pitch = isPaused ? 0.8f : 1;
         }
 
     }

@@ -10587,7 +10587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d6692d2f79875488bf3c437edc8070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalLevelTime: 20
+  totalLevelTime: 120
   endCard: {fileID: 980130274}
 --- !u!1 &1932908797
 GameObject:
@@ -10862,7 +10862,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: -3767420847571584271, guid: 6c43d60309bc0a149b919ae327a52015, type: 3}
       - {fileID: 2313193661530041215, guid: 6c43d60309bc0a149b919ae327a52015, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -1, y: -7, z: 0}

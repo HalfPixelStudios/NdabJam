@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    private void Start() {
+        AudioSource music = FindObjectOfType<AudioSource>();
+        DontDestroyOnLoad(music);
+    }
     void Update() {
         if (Input.GetKeyDown(KeyCode.X)) {
             //also play a lil sound and make a transition
