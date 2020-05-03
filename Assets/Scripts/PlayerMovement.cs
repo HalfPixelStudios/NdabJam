@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour {
 
     void Update() {
 
+        if (PauseMenu.isPaused) { return; }
+
         var inp = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
         //transform.position += new Vector3(inp.x,inp.y,0f) * Time.deltaTime * speed;

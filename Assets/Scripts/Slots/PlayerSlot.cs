@@ -15,7 +15,7 @@ public class PlayerSlot : Slot {
 
     private void Update() {
 
-        
+        if (PauseMenu.isPaused) { return; }
 
 
         if (Input.GetKeyDown(KeyCode.E)) {
