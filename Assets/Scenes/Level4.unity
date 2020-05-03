@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -735,6 +735,7 @@ MonoBehaviour:
   passDist: 0.1
   nextNode: {fileID: 552951909}
   prevNode: {fileID: 1096917107}
+  isReverse: 0
   anim: {fileID: 999632308}
 --- !u!1 &301951342
 GameObject:
@@ -1120,7 +1121,8 @@ MonoBehaviour:
   conveyerSpeed: 5
   passDist: 0.1
   nextNode: {fileID: 1096917107}
-  prevNode: {fileID: 1711946830}
+  prevNode: {fileID: 1248821972}
+  isReverse: 0
   anim: {fileID: 1553355982}
 --- !u!1 &387436624
 GameObject:
@@ -1240,6 +1242,7 @@ MonoBehaviour:
   passDist: 0.1
   nextNode: {fileID: 740015639}
   prevNode: {fileID: 1843313755}
+  isReverse: 0
   anim: {fileID: 786021073}
 --- !u!1 &420098171
 GameObject:
@@ -7688,6 +7691,7 @@ MonoBehaviour:
   passDist: 0.1
   nextNode: {fileID: 1843313755}
   prevNode: {fileID: 252826070}
+  isReverse: 0
   anim: {fileID: 1527516388}
 --- !u!1 &579012873
 GameObject:
@@ -8353,6 +8357,7 @@ MonoBehaviour:
   passDist: 0.1
   nextNode: {fileID: 884935732}
   prevNode: {fileID: 412696707}
+  isReverse: 0
   anim: {fileID: 336746065}
 --- !u!1 &778073577
 GameObject:
@@ -8986,8 +8991,9 @@ MonoBehaviour:
   allowCraft: 1
   conveyerSpeed: 5
   passDist: 0.1
-  nextNode: {fileID: 1248821972}
+  nextNode: {fileID: 1711946830}
   prevNode: {fileID: 740015639}
+  isReverse: 0
   anim: {fileID: 301951344}
 --- !u!1 &888692063
 GameObject:
@@ -9981,6 +9987,7 @@ MonoBehaviour:
   passDist: 0.1
   nextNode: {fileID: 252826070}
   prevNode: {fileID: 349718627}
+  isReverse: 0
   anim: {fileID: 81093828}
 --- !u!1 &1137573755
 GameObject:
@@ -10200,7 +10207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248821970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 1.6, z: 0}
+  m_LocalPosition: {x: -5.5, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1880466211}
@@ -10532,6 +10539,7 @@ MonoBehaviour:
   passDist: 0.1
   nextNode: {fileID: 1975011508}
   prevNode: {fileID: 0}
+  isReverse: 0
   anim: {fileID: 1870864815}
 --- !u!4 &1371692649
 Transform:
@@ -11158,6 +11166,7 @@ MonoBehaviour:
   passDist: 0.1
   nextNode: {fileID: 0}
   prevNode: {fileID: 1975011508}
+  isReverse: 0
   anim: {fileID: 883844276}
 --- !u!1 &1492742442
 GameObject:
@@ -11729,7 +11738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711946828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.5, y: 1.6, z: 0}
+  m_LocalPosition: {x: 3.5, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1880466211}
@@ -11990,6 +11999,7 @@ MonoBehaviour:
   passDist: 0.1
   nextNode: {fileID: 412696707}
   prevNode: {fileID: 552951909}
+  isReverse: 0
   anim: {fileID: 971304762}
 --- !u!1 &1870801623
 GameObject:
@@ -12782,8 +12792,8 @@ Tilemap:
   - first: {x: -6, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -12791,8 +12801,8 @@ Tilemap:
   - first: {x: 3, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -13120,6 +13130,7 @@ MonoBehaviour:
   passDist: 0.1
   nextNode: {fileID: 1459608740}
   prevNode: {fileID: 1371692648}
+  isReverse: 0
   anim: {fileID: 1444216377}
 --- !u!4 &1975011509
 Transform:

@@ -44,6 +44,7 @@ public class SoundPlayer : MonoBehaviour {
         SoundPlayer sp = Instantiate(Resources.Load("SoundPlayer") as GameObject).GetComponent<SoundPlayer>();
         AudioClip[] clips = Resources.LoadAll<AudioClip>(audiodir);
 
+        if (clips.Length == 0) { return;  }
         AudioClip clip = clips[Random.Range(0, clips.Length)];
         sp.playSound(clip, volume);
     }
