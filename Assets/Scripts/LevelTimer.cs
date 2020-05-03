@@ -9,10 +9,13 @@ public class LevelTimer : MonoBehaviour {
 
     public float totalLevelTime;
 
+    public FinishedLevelCard endCard;
+
     float timeleft;
     TextMeshProUGUI text;
 
     float flashTime = 0;
+    bool levelOver; //MOVE TO GLOBAL LATER
 
     void Start() {
         text = GetComponent<TextMeshProUGUI>();
@@ -24,7 +27,7 @@ public class LevelTimer : MonoBehaviour {
 
         timeleft -= Time.deltaTime;
         display();
-        if (timeleft < 0) {
+        if (timeleft < 0 && !levelOver) {
             //end level
             Time.timeScale = 0f;
 
@@ -42,6 +45,10 @@ public class LevelTimer : MonoBehaviour {
             //bring up a screen to show score
             Debug.Log($"{posScore},{negScore}");
 
+            endCard.state = FinishedLevelCard.CardState.SLIDING;
+            endCard.playerScore = posScore + negScore;
+
+            levelOver = true;
 
         }
     }
