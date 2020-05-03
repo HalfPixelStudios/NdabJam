@@ -172,7 +172,7 @@ MonoBehaviour:
   allowPlace: 0
   allowCraft: 0
   acceptable:
-  - {fileID: 11400000, guid: df3ba46be624bcf4981a576f7dc7060a, type: 2}
+  - {fileID: 11400000, guid: d80328b9c945129408598827079bda25, type: 2}
   deposited: []
   posScore: 0
   negScore: 0
@@ -674,7 +674,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 1729322405}
   prevNode: {fileID: 822116376}
   isReverse: 1
@@ -795,7 +795,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 552951909}
   prevNode: {fileID: 1096917107}
   isReverse: 0
@@ -1264,7 +1264,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 822116376}
   prevNode: {fileID: 57407683}
   isReverse: 1
@@ -1371,7 +1371,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 1096917107}
   prevNode: {fileID: 1012311235}
   isReverse: 0
@@ -1459,7 +1459,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 740015639}
   prevNode: {fileID: 1843313755}
   isReverse: 0
@@ -7830,7 +7830,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 1843313755}
   prevNode: {fileID: 252826070}
   isReverse: 0
@@ -8671,7 +8671,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 884935732}
   prevNode: {fileID: 412696707}
   isReverse: 0
@@ -9193,7 +9193,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 177191952}
   prevNode: {fileID: 339626722}
   isReverse: 1
@@ -9375,7 +9375,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 904017405}
   prevNode: {fileID: 740015639}
   isReverse: 0
@@ -10202,7 +10202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   playerScore: 0
-  starThreshholds: {x: 600, y: 900, z: 1200}
+  starThreshholds: {x: 300, y: 600, z: 900}
   nextLevelButton: {fileID: 1392098848}
   retryLevelButton: {fileID: 785794215}
   star1: {fileID: 847558032}
@@ -10444,7 +10444,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 252826070}
   prevNode: {fileID: 349718627}
   isReverse: 0
@@ -10639,7 +10639,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 1209851667}
   prevNode: {fileID: 1458800745}
   isReverse: 1
@@ -11586,7 +11586,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 1236417189}
   prevNode: {fileID: 1686671385}
   isReverse: 1
@@ -12357,7 +12357,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 1458800745}
   prevNode: {fileID: 2016596015}
   isReverse: 1
@@ -12463,7 +12463,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 2016596015}
   prevNode: {fileID: 177191952}
   isReverse: 1
@@ -12709,7 +12709,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 412696707}
   prevNode: {fileID: 552951909}
   isReverse: 0
@@ -13819,7 +13819,7 @@ MonoBehaviour:
   allowPlace: 1
   allowCraft: 1
   conveyerSpeed: 1.5
-  passDist: 0.1
+  passDist: 0.5
   nextNode: {fileID: 1686671385}
   prevNode: {fileID: 1729322405}
   isReverse: 1
