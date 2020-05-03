@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class FinishedLevelCard : MonoBehaviour {
@@ -82,6 +83,7 @@ public class FinishedLevelCard : MonoBehaviour {
 
             if (Input.GetKeyDown(KeyCode.X)) {
                 //go to next level
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
     }
