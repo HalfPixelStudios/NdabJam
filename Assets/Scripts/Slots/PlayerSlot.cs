@@ -34,6 +34,8 @@ public class PlayerSlot : Slot {
 
             }
 
+            Vector3 dirToClosest = closest.transform.position - transform.position;
+
             if (closest) {
                 closest.Interact(this);
             }
