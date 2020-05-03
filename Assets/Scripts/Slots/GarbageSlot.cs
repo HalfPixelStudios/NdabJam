@@ -16,7 +16,7 @@ public class GarbageSlot : Slot {
         if (item != null) { //if theres an item, destory it
             DestroyItem();
 
-            SoundPlayer.quickStart("Sounds/incinerator");
+            SoundPlayer.quickStart("Sounds/incinerator",1f);
             Instantiate(Resources.Load("Particles/FireParticle"),transform.position,Quaternion.identity);
         }
     }

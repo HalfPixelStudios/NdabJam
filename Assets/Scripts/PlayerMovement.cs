@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour {
         distSinceStep += Vector3.Distance(transform.position,prevPosition);
         if (distSinceStep > footstepDistance) {
             distSinceStep = 0;
-            SoundPlayer.quickRandomSound("Sounds/footsteps");
+            SoundPlayer.quickRandomSound("Sounds/footsteps",1f);
         }
 
         prevPosition = transform.position;

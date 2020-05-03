@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(KeyCode.X)) {
             //also play a lil sound and make a transition
-            SoundPlayer.quickStart("Sounds/buttonPress");
+            SoundPlayer.quickStart("Sounds/startGame");
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
 

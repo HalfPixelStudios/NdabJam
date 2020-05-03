@@ -43,11 +43,12 @@ public class LevelTimer : MonoBehaviour {
             }
 
             //bring up a screen to show score
-            Debug.Log($"{posScore},{negScore}");
+            //Debug.Log($"{posScore},{negScore}");
 
             endCard.state = FinishedLevelCard.CardState.SLIDING;
             endCard.playerScore = posScore + negScore;
 
+            SoundPlayer.quickStart("Sounds/roundOver");
             levelOver = true;
 
         }

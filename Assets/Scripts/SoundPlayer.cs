@@ -12,7 +12,6 @@ public class SoundPlayer : MonoBehaviour {
 
     void Awake() {
         audio_source = GetComponent<AudioSource>();
-
     }
 
     void Update() {
@@ -33,19 +32,22 @@ public class SoundPlayer : MonoBehaviour {
     }
 
     public static void quickStart(string audiopath, float volume) { //shen we dont wanna do anything special with the audio object
-
-    }
-    public static void quickStart(string audiopath) {
         SoundPlayer sp = Instantiate(Resources.Load("SoundPlayer") as GameObject).GetComponent<SoundPlayer>();
         AudioClip clip = Instantiate(Resources.Load<AudioClip>(audiopath));
-        sp.playSound(clip, defaultVolume);
+        sp.playSound(clip, volume);
+    }
+    public static void quickStart(string audiopath) {
+        SoundPlayer.quickStart(audiopath, defaultVolume);
     }
 
-    public static void quickRandomSound(string audiodir) {
+    public static void quickRandomSound(string audiodir, float volume) {
         SoundPlayer sp = Instantiate(Resources.Load("SoundPlayer") as GameObject).GetComponent<SoundPlayer>();
         AudioClip[] clips = Resources.LoadAll<AudioClip>(audiodir);
 
         AudioClip clip = clips[Random.Range(0, clips.Length)];
-        sp.playSound(clip, defaultVolume);
+        sp.playSound(clip, volume);
+    }
+    public static void quickRandomSound(string audiodir) {
+        SoundPlayer.quickRandomSound(audiodir,defaultVolume);
     }
 }
