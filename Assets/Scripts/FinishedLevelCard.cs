@@ -82,8 +82,15 @@ public class FinishedLevelCard : MonoBehaviour {
         else if (state == CardState.FINISHED) {
 
             if (Input.GetKeyDown(KeyCode.X)) {
-                //go to next level
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SoundPlayer.quickStart("Sounds/buttonPress");
+                Time.timeScale = 1f;
+                if (playerScore >= starThreshholds.x) { //go to next level
+
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                } else { //retry level
+                    
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
             }
         }
     }

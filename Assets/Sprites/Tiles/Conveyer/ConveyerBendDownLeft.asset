@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e3a359e32d413247abbf3dee02435ec, type: 3}
-  m_Name: ConveyerBend
+  m_Name: ConveyerBendDownLeft
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: 2609204458862623525, guid: d3bad2fdf0bf4d142a8cb0eff5db744d, type: 3}
-  - {fileID: 3294478508149930233, guid: d3bad2fdf0bf4d142a8cb0eff5db744d, type: 3}
+  - {fileID: 3421618748728293108, guid: 1a704bb20b3c602498513ea30306794f, type: 3}
+  - {fileID: 5546538025412155802, guid: 1a704bb20b3c602498513ea30306794f, type: 3}
   m_MinSpeed: 10
   m_MaxSpeed: 10
   m_AnimationStartTime: 0
-  m_TileColliderType: 1
+  m_TileColliderType: 0
