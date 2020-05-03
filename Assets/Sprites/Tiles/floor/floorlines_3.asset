@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: conveyerBase
+  m_Name: floorlines_3
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 5d77527c7164f7f40a30815f0baf4abd, type: 3}
+  m_Sprite: {fileID: -2630731809196606623, guid: 1b523ee1c20cccf428792da7b99e9c83,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -33,4 +34,4 @@ MonoBehaviour:
     e33: 1
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
-  m_ColliderType: 0
+  m_ColliderType: 1

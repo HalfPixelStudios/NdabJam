@@ -47,10 +47,14 @@ public class Slot : MonoBehaviour {
             ItemInfo crafted = CraftingRecipes.Craft(item1, item2);
 
             if (crafted) { //if an item was successfully crafted
+                GameObject newItem = Item.CreateItem(crafted);
+                newItem.transform.position = item.transform.position;
+
                 playerSlot.DestroyItem();
                 DestroyItem();
 
-                SetItem(Item.CreateItem(crafted));
+
+                SetItem(newItem);
 
                 SoundPlayer.quickStart("Sounds/craftSuccess");
             } else {

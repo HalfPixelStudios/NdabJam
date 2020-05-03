@@ -6,7 +6,10 @@ using UnityEngine;
 public class MailSpawner : MonoBehaviour {
 
     public List<ItemInfo> packages;
+    public float spawnRate;
     ConveyerSlot conveyer;
+
+    float spawnCounter = 0f;
 
     void Start() {
         conveyer = GetComponent<ConveyerSlot>();
@@ -16,10 +19,16 @@ public class MailSpawner : MonoBehaviour {
         
         if (conveyer.item != null || packages.Count == 0) { return; }
 
-        //spawn new mail parcel thingy
-        ItemInfo randomParcel = packages[Random.Range(0,packages.Count)];
-        GameObject newItem = Item.CreateItem(randomParcel);
-        conveyer.SetItem(newItem);
+        spawnCounter += Time.deltaTime;
+
+        if (spawnCounter > spawnRate) {
+            //spawn new mail parcel thingy
+            ItemInfo randomParcel = packages[Random.Range(0, packages.Count)];
+            GameObject newItem = Item.CreateItem(randomParcel);
+            conveyer.SetItem(newItem);
+
+            spawnCounter = 0;
+        }
 
         
     }
