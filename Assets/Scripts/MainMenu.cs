@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour {
         
     }
     void Update() {
-        if (Input.GetKeyDown(KeyCode.X)) {
+        if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.E)) {
             //also play a lil sound and make a transition
             SoundPlayer.quickStart("Sounds/startGame");
 

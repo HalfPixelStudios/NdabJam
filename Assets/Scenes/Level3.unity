@@ -167,6 +167,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -658,6 +659,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -725,6 +727,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -1110,6 +1113,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -1228,6 +1232,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -6203,6 +6208,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -7674,6 +7680,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -8338,6 +8345,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -8392,6 +8400,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -8971,6 +8980,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -9708,7 +9718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   playerScore: 0
-  starThreshholds: {x: 100, y: 200, z: 300}
+  starThreshholds: {x: 600, y: 900, z: 1200}
   nextLevelButton: {fileID: 1392098848}
   retryLevelButton: {fileID: 785794215}
   star1: {fileID: 847558032}
@@ -9910,6 +9920,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -9962,6 +9973,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10070,6 +10082,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10119,6 +10132,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0.6}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10207,6 +10221,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10335,6 +10350,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10508,9 +10524,10 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
-  allowTake: 1
-  allowPlace: 1
-  allowCraft: 1
+  muteEffects: 0
+  allowTake: 0
+  allowPlace: 0
+  allowCraft: 0
   conveyerSpeed: 5
   passDist: 0.1
   nextNode: {fileID: 1975011508}
@@ -11133,6 +11150,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -11732,6 +11750,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -11786,6 +11805,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -11838,6 +11858,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -11961,6 +11982,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -12512,7 +12534,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: -3767420847571584271, guid: 6c43d60309bc0a149b919ae327a52015, type: 3}
       - {fileID: 2313193661530041215, guid: 6c43d60309bc0a149b919ae327a52015, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 2, y: -2, z: 0}
@@ -13051,6 +13073,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -13089,6 +13112,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -13441,6 +13465,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1

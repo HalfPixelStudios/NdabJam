@@ -81,7 +81,7 @@ public class FinishedLevelCard : MonoBehaviour {
         }
         else if (state == CardState.FINISHED) {
 
-            if (Input.GetKeyDown(KeyCode.X)) {
+            if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.E)) {
                 SoundPlayer.quickStart("Sounds/buttonPress");
                 Time.timeScale = 1f;
                 if (playerScore >= starThreshholds.x) { //go to next level

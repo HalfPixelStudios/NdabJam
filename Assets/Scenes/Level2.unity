@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -168,6 +168,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -390,6 +391,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -489,6 +491,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -541,6 +544,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -5604,6 +5608,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -5688,6 +5693,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -5740,6 +5746,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -6112,6 +6119,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -7255,6 +7263,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -7307,6 +7316,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -7832,6 +7842,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -8117,6 +8128,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -8243,6 +8255,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -8876,7 +8889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   playerScore: 0
-  starThreshholds: {x: 100, y: 200, z: 300}
+  starThreshholds: {x: 500, y: 100, z: 1500}
   nextLevelButton: {fileID: 1392098848}
   retryLevelButton: {fileID: 785794215}
   star1: {fileID: 847558032}
@@ -8928,6 +8941,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -8980,6 +8994,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -9161,6 +9176,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -9213,6 +9229,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -9267,6 +9284,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0.6}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -9317,6 +9335,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -9369,6 +9388,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -9421,6 +9441,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -9473,6 +9494,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -9525,6 +9547,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -9651,6 +9674,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10048,6 +10072,7 @@ MonoBehaviour:
   hideWhenHeld: 1
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10172,6 +10197,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10298,6 +10324,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10559,6 +10586,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10611,6 +10639,7 @@ MonoBehaviour:
   hideWhenHeld: 1
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10661,6 +10690,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -10787,6 +10817,7 @@ MonoBehaviour:
   hideWhenHeld: 0
   item: {fileID: 0}
   holdOffset: {x: 0, y: 0}
+  muteEffects: 0
   allowTake: 1
   allowPlace: 1
   allowCraft: 1
@@ -11146,7 +11177,7 @@ Tilemap:
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 0
+      m_AllTileFlags: 1073741824
   - first: {x: 1, y: -7, z: 0}
     second:
       serializedVersion: 2
@@ -12026,7 +12057,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &2052754615
 Animator:
   serializedVersion: 3
@@ -12105,7 +12136,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052754614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5, y: 2, z: 0}
+  m_LocalPosition: {x: -5.5, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1694696468}

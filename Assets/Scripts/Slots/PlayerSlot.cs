@@ -18,7 +18,7 @@ public class PlayerSlot : Slot {
         if (PauseMenu.isPaused) { return; }
 
 
-        if (Input.GetKeyDown(KeyCode.E)) {
+        if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.E)) {
 
             //look for closest node within reach distance
 
