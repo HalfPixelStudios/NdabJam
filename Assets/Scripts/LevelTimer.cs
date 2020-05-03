@@ -39,6 +39,7 @@ public class LevelTimer : MonoBehaviour {
 
             }
 
+            //bring up a screen to show score
             Debug.Log($"{posScore},{negScore}");
 
 
